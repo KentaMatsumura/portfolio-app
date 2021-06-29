@@ -6,9 +6,9 @@
 
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Hobby" right>
-          <b-dropdown-item href="#/comic">Comic</b-dropdown-item>
-          <b-dropdown-item href="#/music">Music</b-dropdown-item>
-          <b-dropdown-item href="#/movie">Movie</b-dropdown-item>
+          <b-dropdown-item href="/comic">Comic</b-dropdown-item>
+          <b-dropdown-item href="/music">Music</b-dropdown-item>
+          <b-dropdown-item href="/movie">Movie</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="User" right>
