@@ -9,20 +9,20 @@
 </template>
 
 <script>
-import Vue from 'vue'
+/* eslint-disable */
+import Vue from 'vue';
 
 export default Vue.extend({
   methods: {
-    returnTop(){
+    returnTop() {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
-      })
-    }
-  }
-})
+        behavior: 'smooth',
+      });
+    },
+  },
+});
 </script>
 
 <style scoped>
-
 </style>

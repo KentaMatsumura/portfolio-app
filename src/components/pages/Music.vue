@@ -1,6 +1,6 @@
 <template>
   <div>
-    Home
+    Music
     <br />
     <button class="btn btn-primary">test</button>
     <div>

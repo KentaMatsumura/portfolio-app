@@ -1,22 +1,23 @@
 <template>
   <div id="app">
     <Header />
-    <router-view/>
+    <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/modules/Header'
-import Footer from './components/modules/Footer'
+/* eslint-disable */
+import Header from './components/modules/Header';
+import Footer from './components/modules/Footer';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>
 
 <style>

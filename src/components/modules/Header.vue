@@ -5,11 +5,10 @@
         <b-nav-item href="/">Home</b-nav-item>
 
         <!-- Navbar dropdowns -->
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
+        <b-nav-item-dropdown text="Hobby" right>
+          <b-dropdown-item href="#/comic">Comic</b-dropdown-item>
+          <b-dropdown-item href="#/music">Music</b-dropdown-item>
+          <b-dropdown-item href="#/movie">Movie</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="User" right>
@@ -22,9 +21,7 @@
 </template>
 
 <script>
-
 </script>
 
 <style scoped>
-
 </style>
