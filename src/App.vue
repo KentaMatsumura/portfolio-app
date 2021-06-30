@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Header />
+    <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import Header from './components/modules/Header';
+import Footer from './components/modules/Footer';
+
 export default {
-  name: 'App'
-}
+  name: 'App',
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
 
 <style>
