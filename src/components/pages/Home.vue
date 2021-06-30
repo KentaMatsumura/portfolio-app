@@ -2,64 +2,22 @@
   <div>
     Home
     <br />
-    <button class="btn btn-primary">test</button>
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
+    <h1>Hello, {{ guest }}</h1>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import { defineComponent } from '@vue/composition-api';
+
+export default defineComponent({
+  data() {
+    const guest = 'Guest';
+    return { guest };
+  },
+});
 </script>
+
 
 <style>
 </style>

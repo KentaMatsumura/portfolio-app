@@ -10,18 +10,28 @@
           <b-dropdown-item href="/music">Music</b-dropdown-item>
           <b-dropdown-item href="/movie">Movie</b-dropdown-item>
         </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown text="User" right>
-          <b-dropdown-item href="#">Account</b-dropdown-item>
-          <b-dropdown-item href="#">Settings</b-dropdown-item>
-        </b-nav-item-dropdown>
       </b-navbar-nav>
+      <b-container class="d-flex justify-content-end">
+        <User />
+      </b-container>
     </b-navbar>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import { defineComponent } from '@vue/composition-api';
+
+import User from '@/components/modules/User.vue';
+
+export default defineComponent({
+  name: 'Header',
+  components: {
+    User,
+  },
+});
 </script>
+
 
 <style scoped>
 </style>
