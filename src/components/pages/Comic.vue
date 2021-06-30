@@ -3,58 +3,106 @@
     Comic
     <br />
     <button class="btn btn-primary">test</button>
-    <div>
-      <h1>hello</h1>
-    </div>
     <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
-    <div>
-      <h1>hello</h1>
-    </div>
-    <br />
+
+    <b-card-group deck>
+      <div>
+        <b-card
+          header="Card Header"
+          header-text-variant="white"
+          header-tag="header"
+          header-bg-variant="dark"
+          footer="Card Footer"
+          footer-tag="footer"
+          footer-bg-variant="success"
+          footer-border-variant="dark"
+          title="Title"
+          style="max-width: 20rem"
+        >
+          <b-card-text>Header and footers variants.</b-card-text>
+        </b-card>
+      </div>
+      <div>
+        <b-card
+          header="Card Header"
+          header-text-variant="white"
+          header-tag="header"
+          header-bg-variant="dark"
+          footer="Card Footer"
+          footer-tag="footer"
+          footer-bg-variant="success"
+          footer-border-variant="dark"
+          title="Title"
+          style="max-width: 20rem"
+        >
+          <b-card-text>Header and footers variants.</b-card-text>
+        </b-card>
+      </div>
+      <div>
+        <b-card
+          header="Card Header"
+          header-text-variant="white"
+          header-tag="header"
+          header-bg-variant="dark"
+          footer="Card Footer"
+          footer-tag="footer"
+          footer-bg-variant="success"
+          footer-border-variant="dark"
+          title="Title"
+          style="max-width: 20rem"
+        >
+          <b-card-text>Header and footers variants.</b-card-text>
+        </b-card>
+      </div>
+      <div>
+        <b-card
+          header="Card Header"
+          header-text-variant="white"
+          header-tag="header"
+          header-bg-variant="dark"
+          footer="Card Footer"
+          footer-tag="footer"
+          footer-bg-variant="success"
+          footer-border-variant="dark"
+          title="Title"
+          style="max-width: 20rem"
+        >
+          <b-card-text>Header and footers variants.</b-card-text>
+        </b-card>
+      </div>
+      <div>
+        <b-card
+          header="Card Header"
+          header-text-variant="white"
+          header-tag="header"
+          header-bg-variant="dark"
+          footer="Card Footer"
+          footer-tag="footer"
+          footer-bg-variant="success"
+          footer-border-variant="dark"
+          title="Title"
+          style="max-width: 20rem"
+        >
+          <b-card-text>Header and footers variants.</b-card-text>
+        </b-card>
+      </div>
+      <div>
+        <b-card
+          header="Card Header"
+          header-text-variant="white"
+          header-tag="header"
+          header-bg-variant="dark"
+          footer="Card Footer"
+          footer-tag="footer"
+          footer-bg-variant="success"
+          footer-border-variant="dark"
+          title="Title"
+          style="max-width: 20rem"
+        >
+          <b-card-text>Header and footers variants.</b-card-text>
+        </b-card>
+      </div>
+    </b-card-group>
   </div>
 </template>
 
