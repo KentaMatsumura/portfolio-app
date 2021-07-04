@@ -2,7 +2,10 @@
   <div>
     Home
     <br />
-    <h1>Hello, {{ guest }}</h1>
+    <h1>Hello, {{ this.status ? this.user.displayName : 'Guest' }}</h1>
+    <br />
+    <br />
+    <b-button variant="primary" v-on:click="testClick">test</b-button>
   </div>
 </template>
 
@@ -11,9 +14,18 @@
 import { defineComponent } from '@vue/composition-api';
 
 export default defineComponent({
-  data() {
-    const guest = 'Guest';
-    return { guest };
+  computed: {
+    user() {
+      return this.$store.getters.user;
+    },
+    status() {
+      return this.$store.getters.status;
+    },
+  },
+  methods: {
+    testClick: function () {
+      alert(this.status ? this.user.displayName : 'Guest');
+    },
   },
 });
 </script>

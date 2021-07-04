@@ -1,7 +1,8 @@
 <template>
-  <div class="user" v-if="true">
-    <p class="displayName">Guest</p>
-    <b-button variant="secondary"> Sign out </b-button>
+  <!-- <div class="user" v-if="user.isLogin"> -->
+  <div class="user" v-if="status">
+    <!-- <p class="displayName">{{ user.name }}</p> -->
+    <b-button variant="secondary" v-on:click="doLogout"> Sign out </b-button>
   </div>
   <div class="user" v-else>
     <LoginButton />
@@ -13,11 +14,29 @@
 import { defineComponent } from '@vue/composition-api';
 
 import LoginButton from '@/components/modules/LoginButton.vue';
+import Firebase from '../../firebase.js';
 
 export default defineComponent({
   name: 'User',
+  created: function () {
+    Firebase.onAuth();
+  },
   components: {
     LoginButton,
+  },
+  computed: {
+    user() {
+      return this.$store.getters.user;
+    },
+    status() {
+      return this.$store.getters.status;
+    },
+  },
+  methods: {
+    doLogout: function () {
+      // firebase.auth().signOut();
+      Firebase.logout();
+    },
   },
 });
 </script>
