@@ -24,7 +24,7 @@ export default defineComponent({
   },
   methods: {
     testClick: function () {
-      alert(this.status ? this.user.displayName : 'Guest');
+      alert(this.status ? this.user.photoURL : 'Guest');
     },
   },
 });

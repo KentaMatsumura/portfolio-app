@@ -6,9 +6,9 @@
 
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown text="Hobby" right>
-          <b-dropdown-item href="/comic">Comic</b-dropdown-item>
-          <b-dropdown-item href="/music">Music</b-dropdown-item>
-          <b-dropdown-item href="/movie">Movie</b-dropdown-item>
+          <b-dropdown-item href="/comicList">ComicList</b-dropdown-item>
+          <b-dropdown-item href="/musicList">MusicList</b-dropdown-item>
+          <b-dropdown-item href="/movieList">MovieList</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
       <b-container class="d-flex justify-content-end">

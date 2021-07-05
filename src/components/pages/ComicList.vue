@@ -103,11 +103,26 @@
         </b-card>
       </div>
     </b-card-group>
+    <br />
+    <div>
+      <Card />
+    </div>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import { defineComponent } from '@vue/composition-api';
+import Card from '../modules/Card.vue';
+
+export default defineComponent({
+  setup() {},
+  components: {
+    Card,
+  },
+});
 </script>
+
 
 <style>
 </style>

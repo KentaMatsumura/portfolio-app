@@ -2,9 +2,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/pages/Home';
-import Comic from '@/components/pages/Comic';
-import Music from '@/components/pages/Music';
-import Movie from '@/components/pages/Movie';
+import ComicList from '@/components/pages/ComicList';
+import MusicList from '@/components/pages/MusicList';
+import MovieList from '@/components/pages/MovieList';
 
 Vue.use(Router);
 
@@ -17,19 +17,19 @@ export default new Router({
       component: Home
     },
     {
-      path: '/comic',
-      name: 'Comic',
-      component: Comic
+      path: '/comicList',
+      name: 'ComicList',
+      component: ComicList
     },
     {
-      path: '/music',
-      name: 'Music',
-      component: Music
+      path: '/musicList',
+      name: 'MusicList',
+      component: MusicList
     },
     {
-      path: '/movie',
-      name: 'Movie',
-      component: Movie
+      path: '/movieList',
+      name: 'MovieList',
+      component: MovieList
     }
   ]
 });
