@@ -1,6 +1,4 @@
 /* eslint-disable */
-import firebase from 'firebase/app';
-import 'firebase/auth';
 import Vue from 'vue';
 import Vuex from 'vuex';
 
