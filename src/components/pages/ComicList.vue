@@ -2,111 +2,20 @@
   <div>
     Comic
     <br />
-    <button class="btn btn-primary">test</button>
-    <br />
-
-    <b-card-group deck>
-      <div>
-        <b-card
-          header="Card Header"
-          header-text-variant="white"
-          header-tag="header"
-          header-bg-variant="dark"
-          footer="Card Footer"
-          footer-tag="footer"
-          footer-bg-variant="success"
-          footer-border-variant="dark"
-          title="Title"
-          style="max-width: 20rem"
-        >
-          <b-card-text>Header and footers variants.</b-card-text>
-        </b-card>
-      </div>
-      <div>
-        <b-card
-          header="Card Header"
-          header-text-variant="white"
-          header-tag="header"
-          header-bg-variant="dark"
-          footer="Card Footer"
-          footer-tag="footer"
-          footer-bg-variant="success"
-          footer-border-variant="dark"
-          title="Title"
-          style="max-width: 20rem"
-        >
-          <b-card-text>Header and footers variants.</b-card-text>
-        </b-card>
-      </div>
-      <div>
-        <b-card
-          header="Card Header"
-          header-text-variant="white"
-          header-tag="header"
-          header-bg-variant="dark"
-          footer="Card Footer"
-          footer-tag="footer"
-          footer-bg-variant="success"
-          footer-border-variant="dark"
-          title="Title"
-          style="max-width: 20rem"
-        >
-          <b-card-text>Header and footers variants.</b-card-text>
-        </b-card>
-      </div>
-      <div>
-        <b-card
-          header="Card Header"
-          header-text-variant="white"
-          header-tag="header"
-          header-bg-variant="dark"
-          footer="Card Footer"
-          footer-tag="footer"
-          footer-bg-variant="success"
-          footer-border-variant="dark"
-          title="Title"
-          style="max-width: 20rem"
-        >
-          <b-card-text>Header and footers variants.</b-card-text>
-        </b-card>
-      </div>
-      <div>
-        <b-card
-          header="Card Header"
-          header-text-variant="white"
-          header-tag="header"
-          header-bg-variant="dark"
-          footer="Card Footer"
-          footer-tag="footer"
-          footer-bg-variant="success"
-          footer-border-variant="dark"
-          title="Title"
-          style="max-width: 20rem"
-        >
-          <b-card-text>Header and footers variants.</b-card-text>
-        </b-card>
-      </div>
-      <div>
-        <b-card
-          header="Card Header"
-          header-text-variant="white"
-          header-tag="header"
-          header-bg-variant="dark"
-          footer="Card Footer"
-          footer-tag="footer"
-          footer-bg-variant="success"
-          footer-border-variant="dark"
-          title="Title"
-          style="max-width: 20rem"
-        >
-          <b-card-text>Header and footers variants.</b-card-text>
-        </b-card>
-      </div>
-    </b-card-group>
-    <br />
-    <div>
-      <Card />
-    </div>
+    <button class="btn btn-primary" v-on:click="testClick">test</button>
+    <b-container>
+      <b-row align-h="center">
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+        <b-col cols="3"> <Card /> </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -119,6 +28,19 @@ export default defineComponent({
   setup() {},
   components: {
     Card,
+  },
+  computed: {
+    user() {
+      return this.$store.getters.user;
+    },
+    status() {
+      return this.$store.getters.status;
+    },
+  },
+  methods: {
+    testClick: function () {
+      alert(this.status ? this.user.displayName : 'Guest');
+    },
   },
 });
 </script>
